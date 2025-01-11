@@ -26,19 +26,18 @@ O frontend utiliza Vite + React.js para o desenvolvimento rápido de interfaces 
 
 #### Siga os passos abaixo para rodar o projeto em sua máquina:
 
-**Clone o repositório:**
-
+**Clone o repositório:** <br/>
 ` git clone https://github.com/0tarso/Encurtando--Full.git ` <br/> 
 `cd Encurtando `
 
 **Configure o Backend:**<br/>
-O armazenamento dos links foi feito utilizando o Firebase. Para utilizar os serviços você deve ter uma conta previamente cadastrada e um projeto criado para se conectar com essa aplicação conforme o .env.example do projeto
+O armazenamento dos links foi feito utilizando o Firebase. Para utilizar os serviços você deve ter uma conta previamente cadastrada e um projeto criado para se conectar com essa aplicação conforme o .env.example do projeto. <br/>
 `cd Backend`<br/>
 `npm install`<br/>
 `npm run dev`
 
 
-**Configure o Frontend:**
+**Configure o Frontend:** <br/>
 `cd Frontend`<br/> 
 `npm install`<br/>
 `npm run dev`
@@ -50,5 +49,5 @@ Acesse:
 - Frontend: http://localhost:5173
 
 As portas utilizadas podem ser configuradas conforme sua preferência.
-
+<hr>
 🙏 Obrigado por explorar o Encurtando! 🙏
