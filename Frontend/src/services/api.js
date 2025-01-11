@@ -1,7 +1,7 @@
 require('dotenv').config()
 import axios from "axios";
 
-//BASE_URL_API pode ser o localhost
+//BASE_URL_API será o localhost
 //na porta em que você escolher no projeto backend
 
 const BASE_URL = process.env.BASE_URL_API
