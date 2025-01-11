@@ -1,0 +1,150 @@
+.box-form {
+    background-color: #9b38f7;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 8px 25px 8px;
+    /* overflow: hidden; */
+    z-index: 5;
+
+    transition: all 1s;
+
+}
+
+.box-form .form-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+
+}
+
+.form-content span {
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.form-content form {
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.form-content form label {
+    color: #dfdff4;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+
+.form-content form input {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: transparent;
+    margin-top: 0.5rem;
+}
+
+.btn-form {
+    background-color: #8a2be2;
+    border-radius: 0.5rem;
+    border: 1px solid #7223bb;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* .btn-form.qrcode {
+    width: 90%;
+} */
+
+.btn-form:hover {
+    background-color: #9b38f7;
+    font-size: 1.9rem;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.box-form .box-result {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.box-result span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.box-result .result-content {
+    width: 100%;
+    background-color: #7223bb;
+    /* height: 40%; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-result .result-content p {
+    color: #f5f5f5;
+}
+
+.box-form a {
+    text-decoration: none;
+    color: #dfdff4;
+    font-weight: 600;
+}
+
+@media screen and (max-width:900px) {
+    .box-form {
+        overflow: unset;
+        flex: 1;
+        /* height: 400px; */
+    }
+
+    .box-form .form-content {
+        width: 80%;
+        display: block;
+    }
+
+
+    .box-form .box-result {
+        height: 200px;
+        flex: none;
+    }
+
+    .box-result .result-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box-form {
+        margin-bottom: 100px;
+
+    }
+
+}

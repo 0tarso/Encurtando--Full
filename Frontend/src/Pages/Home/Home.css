@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.container {
+    /* background-color: red; */
+    padding: 1rem;
+    display: flex;
+    width: 95%;
+    height: 80%;
+    max-height: 700px;
+    transition: all 1s;
+    animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.box-content {
+    /* background: #afaf; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #dfdff4;
+    font-size: 8rem;
+    font-family: "Ubuntu";
+    font-weight: 600;
+    font-style: normal;
+    background-color: #8a2be2;
+    animation: titleBar 15s ease infinite;
+}
+
+@keyframes titleBar {
+    0% {
+        width: 80%;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+span {
+    color: #dfdff4;
+
+}
+
+.firstSubtitle {
+    font-size: 1.5rem;
+    /* background-color: #9b38f7; */
+    font-stretch: condensed;
+    padding-left: 8px;
+    width: 45%;
+}
+
+.secondSubtitle {
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.box-description {
+    margin-top: 1rem;
+    /* background-color: #a5a5a5; */
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.description {
+    /* width: 49%; */
+    margin-right: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    transition: all 0.1s;
+}
+
+.description:hover {
+    background-color: #9b38f7;
+    transform: scale(1.02);
+    overflow: hidden;
+}
+
+.description-title {
+    display: flex;
+    /* background-color: #8a2be2; */
+    align-items: center;
+}
+
+.description h3 {
+    font-size: 1.7rem;
+    transition: all 0.8s;
+}
+
+.description p {
+    font-weight: 600;
+    transition: all 0.8s;
+    opacity: 0;
+    display: hidden;
+    font-size: 0px;
+    transition: font-size 0.1s, opacity 2s;
+}
+
+.description:hover>.description-title>h3 {
+    color: antiquewhite;
+}
+
+.description:hover p {
+    color: antiquewhite;
+    opacity: 1;
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+.description:hover>.description-title>img {
+    animation: gifMotion 0.5s forwards;
+}
+
+.description img {
+    width: 120px;
+    /* transition: all 2s; */
+    mix-blend-mode: darken;
+}
+
+@keyframes gifMotion {
+    0% {
+        width: 120px;
+
+    }
+
+    50% {
+        width: 10px;
+        position: absolute;
+        left: 150px;
+        top: 130px;
+        opacity: 0.2;
+    }
+
+    100% {
+        width: 250px;
+        position: absolute;
+        left: 150px;
+        top: 90px;
+        opacity: 0.2;
+    }
+}
+
+@media screen and (max-width:1380px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        width: 95%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .box-content {
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        margin-right: 0;
+        width: 48%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .description {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        overflow: scroll;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+
+    .firstSubtitle {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .box-description {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .description {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .open-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .title {
+        font-size: 5.5rem;
+    }
+}
