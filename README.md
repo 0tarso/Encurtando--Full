@@ -4,12 +4,12 @@
 
 ## Tecnologias Utilizadas
 
-### Backend
-
+### Backend <br/>
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=nodejs,express,firebase)<br/>
 Desenvolvido com Node.js e Express, o backend gerencia rotas e segurança com Rate Limit, CORS e Firebase. Cron Jobs cuidam da limpeza de links expirados.
 
-### Frontend
-
+### Frontend <br/>
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=html,css,vite,react)<br/>
 O frontend utiliza Vite + React.js para o desenvolvimento rápido de interfaces dinâmicas que se adaptam tanto a web quanto ao mobile.
 
 ## ✨ Funcionalidades ✨
